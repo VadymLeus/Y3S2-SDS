@@ -1,0 +1,7 @@
+﻿MIT: 83
+ISC: 6
+Apache-2.0: 2
+BSD-3-Clause: 2
+CC-BY-4.0: 1
+UNLICENSED: 1
+
