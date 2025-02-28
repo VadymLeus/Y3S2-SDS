@@ -1,6 +1,6 @@
 const { getAllRecordsByUserId, addRecord, updateRecordById, deleteRecordById } = require("../models/recordModel");
 
-// Добавление записи (доход/расход)
+// Додавання запису (дохід/витрата)
 const addRecordController = async (req, res) => {
   const { userId, type, name, category, amount, description } = req.body;
 
@@ -17,7 +17,7 @@ const addRecordController = async (req, res) => {
   }
 };
 
-// Получение всех записей пользователя
+// Отримання всіх записів користувача
 const getRecordsController = async (req, res) => {
   const { id } = req.params;
 
@@ -30,7 +30,7 @@ const getRecordsController = async (req, res) => {
   }
 };
 
-// Обновление записи
+// Оновлення запису
 const updateRecordController = async (req, res) => {
   const { id, type, name, category, amount, description, date_time } = req.body;
 
@@ -47,7 +47,7 @@ const updateRecordController = async (req, res) => {
   }
 };
 
-// Удаление записи
+// Видалення запису
 const deleteRecordController = async (req, res) => {
   const { id, type } = req.body;
 
